@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffffffec;
+  margin: 0px;
+  border-bottom: 1px solid #0a0505d0;
+  
+  #Header {
+    padding: 10px;
+    img {
+      position: center;
+      width: 40vh;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+}
+
+/*Menu Bar*/
+.menuBar {
+  background-color: #e3e8e3d5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+
+  ul.menu {
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+    li {
+      padding: 0px 15px;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    
+        &:hover {
+          color: #ffffff;
+          border: #000 solid 1px;
+          background-color: #1a911a;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+/*Contents & Side Menu Bar*/
+.main-wrapper {
+  display: flex;
+  background-color: rgb(42, 152, 97);
+  min-height: 100vh;
+  justify-content: space-between;
+
+  .content {
+    display: block;
+    background-color: #ffffffd5;
+    margin: 50 100px;
+    width: 70%;
+    border: 1px solid rgb(33, 190, 109);
+    padding: 30px;
+    border: #000 solid 4px;
+    border-radius: 15px;
+    min-height: 100vh;
+  }
+
+  .card {
+    display: block;
+
+    background-color: antiquewhite;
+    margin: 50 100px;
+    width: 70%;
+    border: 1px solid rgb(33, 190, 109);
+    padding: 30px;
+    border: #000 solid 4px;
+    border-radius: 15px;
+    min-height: 100vh;
+
+    background-color: #996363;
+    cursor: pointer;
+    display: block;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  .sideBar {
+    display: block;
+    background-color: aquamarine;
+    margin-left: auto;
+    width: 20%;
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+}

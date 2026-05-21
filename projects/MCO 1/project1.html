@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>--My Website--</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1>My Own Website</h1>
+      <!-- <button class="open-btn" onclick="o penSidebar()">☰ Menu</button> -->
+    </div>
+
+    <!-- Menu Bar -->
+    <div class="menuBar">
+      <ul id="menu" class="menu">
+        <li><a href="#" onclick="showHome('home')">Home</a></li>
+        <li>
+          <a href="#" onclick="openExercise('exer2')">Exercise 2 </a>
+        </li>
+        <li>
+          <a href="#" onclick="openExercise('exer3')">Exercise 3</a>
+        </li>
+        <li>
+          <a href="#" onclick="openGradeCalculator()">Calculator</a>
+        </li>
+        <li>
+          <a href="#" onclick="showProfile('profile')">Profile</a>
+        </li>
+
+        <!-- <li><a href="#" onclick="showContent('contact')">Contact</a></li> -->
+      </ul>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- PROFILE -->
+      <div class="info">
+        <h3>Student Information</h3>
+        <img src="Profile.jpg" alt="Profile Picture" class="profile-pic" />
+        <p><b>Name:</b> Yasmien E. Mingo</p>
+        <p><b>Course & Section:</b> BSCS - 2A</p>
+        <p><b>Hobbies:</b> Playing Games, Watching Anime, Listening to Music</p>
+        <p><b>Instructor:</b> Mr. Bacamante, Francisco</p>
+      </div>
+
+      <!-- CONTENT AREA -->
+      <div class="content-area" id="content-area">
+        <!-- MAIN CARD -->
+        <div class="content">
+          <div class="card" id="card">
+            <h2>Welcome to My Website</h2>
+            <p>Select an exercise to begin.</p>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sideBar" id="sideBar">
+          <h3 id="sidebar-title">Activities</h3>
+          <div id="activity-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
